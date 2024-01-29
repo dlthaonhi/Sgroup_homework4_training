@@ -21,7 +21,6 @@ h2 {
 /*------------------------------------------*/
 /* LILY*/
 
-
 .pic-lily {
 	position: relative;
 	float: left;
@@ -30,7 +29,7 @@ h2 {
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 38%;
+	width: 48%;
 	background: #3085a3;
 	/*text-align: center;*/
 }
@@ -48,7 +47,7 @@ h2 {
     max-width: none;
 	width: calc(100% + 50px);
 	/* opacity: 0.7; */
-	transform: translate3d(-0px,0,0);
+	transform: translate3d(-40px,0,0);
 	transition: opacity 0.35s, transform 0.35s;
 }
 
@@ -135,7 +134,7 @@ h2 {
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 38%;
+	width: 48%;
 	background: #18a367;
 	/*text-align: center;*/
 }
@@ -146,7 +145,7 @@ h2 {
     max-width: none;
 	width: calc(100% + 50px);
 	opacity: 0.8; 
-	transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30,0);
 	transition:  transform 0.35s;
 }
 
@@ -266,3 +265,106 @@ h2 {
 /*--------------------------------*/
 /*SADIE*/
 
+.pic-sadie {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #18607a;
+	/*text-align: center;*/
+}
+
+
+.pic-sadie img {
+    position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+/*
+.pic-lily img {
+    max-width: none;
+	width: calc(100% + 50px);
+	transform: translate3d(-40px,0,0);
+	transition: opacity 0.35s, transform 0.35s;
+}
+*/
+
+.pic-sadie .text {
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	left: 17%;
+    padding: 2em;
+	color: rgb(71, 66, 66);
+	text-transform: uppercase;	
+}
+
+
+.pic-sadie > text {
+    position: absolute;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+
+.pic-sadie .text11 {
+	transition: transform 0.35s;
+
+}
+
+
+
+.pic-sadie p {
+	color: white;
+	opacity: 0;
+	position: relative;
+	top: 120px;
+	transition: opacity 0.35s, transform 0.35s;
+}
+.pic-sadie:hover .text11 {
+	transform: translate3d(0,-40px,0)
+}
+
+.pic-sadie .text::before {
+	position: absolute;
+	top: 80px;
+	left: -80px;
+	width: 480px;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 95%);
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+.pic-sadie .text::before {
+	transition: opacity 0.35s, transform 0.35s;
+}
+.pic-sadie:hover .text::before {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+.pic-sadie:hover p {
+	opacity: 1;
+	transform: translate3d(0,-20px,0);
+}
+.pic-sadie:hover p,
+.pic-sadie:hover .text11 {
+	opacity: 1;
+	color: #fff;
+}
+
+.pic-lily:hover p {
+	transition-delay: 0.05s;
+	transition-duration: 0.35s;
+}
